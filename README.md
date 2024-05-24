@@ -24,5 +24,9 @@ CONTINUED DEVELOPMENT
 
 In future projects, i want to focus on being able to give functionality to more components and also build more animations.
 
+DEPLOYMENT
+
+vercel.com
+
 LINK TO THE PROJECT
 https://pricing-component-ecru-gamma.vercel.app/
