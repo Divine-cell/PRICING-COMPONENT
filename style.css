@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(240, 78%, 98%);
+    text-align: center;
+    
+}
+
+#top-svg {
+    position: relative;
+    left: 49%;
+    animation: bounce 0.8s; 
+    animation-direction: alternate; 
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes bounce {
+    from {transform: translateY(-5px)};
+    to {transform: translateY(5px);}
+}
+
+#bottom-svg {
+    position: relative;
+    right: 50%;
+    animation: bounce 0.8s; 
+    animation-direction: alternate; 
+    animation-iteration-count: infinite;
+    
+}
+
+
+#container {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+}
+
+#container h1 {
+    color: hsl(233, 13%, 49%);
+}
+
+.period {
+    color: hsl(234, 14%, 74%);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+.range {
+    width: 200px;
+    display: flex;
+   justify-content: center;
+   margin: 20px auto;
+
+}
+
+.toggle-btn {
+    width: 50px;
+    height: 22px;
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+}
+
+.toggle-btn input{
+   width: 0;
+   height: 0;
+   opacity: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border-radius: 20px;
+    
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    left: 2px;
+    background-color: #fff;
+    bottom: 2px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider::before {
+    -webkit-transform: translateX(28px);
+    -ms-transform: translateX(28px);
+    transform: translateX(28px);
+}
+
+#cards {
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   margin: 30px 0;
+}
+
+.card-1 {
+    width: 100%;
+    min-width: 250px;
+    background-color: #fff ;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.basic {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.master {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card-1 h4 {
+    color: hsl(233, 13%, 49%);
+}
+
+.amount {
+    font-weight: 600;
+    color: hsl(233, 13%, 49%);
+    font-size: clamp(30px, 4vw, 50px);
+    padding: 15px;
+    border-bottom: 1px solid  hsl(234, 14%, 74%);
+}
+
+.amount .currency {
+    font-size: clamp(20px, 4vw, 30px);
+}
+
+.card-1 p {
+    font-size: 15px;
+    color: hsl(233, 13%, 49%);
+    font-weight: 600;
+    padding: 20px;
+    border-bottom: .5px solid  hsl(234, 14%, 74%);
+}
+
+.card-1 button {
+    width: 100%;
+    padding: 14px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: .2px solid transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    margin: 25px 0 10px 0;
+    animation: bounce 1.0s; 
+    animation-direction: alternate; 
+    animation-iteration-count: infinite;
+}   
+
+
+.card-1 button:active , .card-1 button:hover{
+    border: 1px solid hsl(236, 72%, 79%);
+    color: hsl(236, 72%, 79%);
+    background-image: inherit;
+    background-color: #fff;
+    transition: 0.5s ease;
+}
+
+
+.card-1:hover .card-1 button {
+    width: 100%;
+    padding: 14px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: hsl(237, 63%, 64%);
+    font-weight: 500;
+    margin: 25px 0 10px 0;
+    transition: 0.5s ease;
+}
+
+#Professional-card {
+    width: 320px;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    text-align: center;
+    padding: 40px 20px 20px 20px ;
+    height: 450px;
+    border-radius: 8px;
+    
+}
+
+#Professional-card h4 {
+    color: #fff;
+}
+
+.amount-1 {
+    font-weight: 600;
+    color: #fff;
+    font-size: clamp(30px, 4vw, 50px);
+    padding: 15px;
+    border-bottom: 1px solid  #fff;
+}
+
+.amount-1 .currency {
+    font-size: clamp(20px, 4vw, 30px);
+}
+
+#Professional-card p{
+    font-size: 15px;
+    color: #fff;
+    font-weight: 600;
+    padding: 20px;
+    border-bottom: .5px solid  #fff;
+}
+
+#Professional-card button {
+    width: 100%;
+    padding: 14px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    color: hsl(237, 63%, 64%);
+    font-weight: 500;
+    margin: 25px 0 10px 0;
+    animation: bounce 1.0s; 
+    animation-direction: alternate; 
+    animation-iteration-count: infinite;
+}    
+
+#Professional-card button:active , #Professional-card button:hover{
+    border: 1px solid #fff;
+    color: #fff;
+    background-image: inherit;
+    transition: 0.5s ease;
+}
+
+#monthly-plans {
+    display: none;
+}
+
+
+@media screen and (max-width: 767px) {
+
+    #conatiner {
+        margin: 50px;
+    }
+
+    #cards {
+        display: block;
+        width: 100%;
+    }
+
+    #top-svg {
+        overflow: hidden;
+        position: fixed;
+    }
+
+    .card-1 {
+        width: 90%;
+       margin: 40px 20px;
+        
+    }
+
+    #Professional-card {
+        width: 90%;
+        margin: 20px;
+        
+        height: auto;
+        
+    }
+    
+    #bottom-svg {
+        position: fixed;
+        overflow: hidden;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1026px) {
+   #container {
+        width: 100%;
+        
+   }
+
+   .basic .card-1 {
+    width: 100%;
+   }
+   .card-1 {
+    width: 250px;
+   }
+
+   #Professional-card {
+     width: 250px;
+   }
+}
+
