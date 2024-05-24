@@ -2,11 +2,13 @@ This project idea was gotten from #Frontend Mentor
 The idea is to create a toggle botton that displays the annual and monthly price of a product when clicked
 
 USERS ARE ABLE TO:
+
 View the optimal layout for the component depending on their device's screen size
 Control the toggle with both their mouse/trackpad and their keyboard
 
 
 BUILT WITH
+
 Semantic HTML5 markup
 CSS custom properties
 CSS flexbox
