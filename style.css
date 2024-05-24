@@ -12,6 +12,10 @@ body {
     
 }
 
+::selection {
+    color: hsl(233, 13%, 49%);
+}
+
 #top-svg {
     position: relative;
     left: 49%;
